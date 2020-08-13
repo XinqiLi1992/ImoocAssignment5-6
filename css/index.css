@@ -60,7 +60,8 @@
 }
 
 .screen-1,
-.screen-2 {
+.screen-2,
+.screen-3 {
   width: 100%;
   height: 640px;
   text-align: center;
@@ -68,7 +69,8 @@
 }
 
 .screen-1__wrap,
-.screen-2__wrap {
+.screen-2__wrap,
+.screen-3__wrap {
   width: 1200px;
   height: 640px;
   margin: 0 auto;
@@ -133,4 +135,88 @@
   bottom: 102px;
   right: 350px;
   z-index: 1;
+}
+
+/* Screen Three */
+.screen-3 {
+  background-color: #2b333b;
+  color: #fff;
+}
+
+.screen-3__wrap {
+  overflow: visible;
+}
+
+.screen-3__headings {
+  width: 550px;
+  text-align: left;
+  top: 230px;
+  right: 0;
+  position: absolute;
+}
+
+.screen-3__heading {
+  font-size: 40px;
+}
+
+.screen-3__heading__underline {
+  margin: 25px 0 20px;
+}
+
+.screen-3__react {
+  width: 570px;
+  height: 640px;
+  background: url(../img/sc3.png) center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: -200px;
+}
+
+.screen-3__tech {
+  width: 520px;
+  height: 68px;
+  position: absolute;
+  right: 10px;
+  bottom: 50px;
+}
+
+.screen-3__tech__item {
+  width: 68px;
+  height: 68px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  float: left;
+  font-size: 14px;
+}
+
+.screen-3__tech__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.screen-3__tech__item--name-html {
+  color: #02b0ff;
+  border-color: #1f5975;
+}
+
+.screen-3__tech__item--name-php {
+  color: #7888fd;
+  border-color: #424d76;
+}
+
+.screen-3__tech__item--name-java {
+  color: #ff6060;
+  border-color: #6b4146;
+}
+
+.screen-3__tech__item--name-python {
+  color: #22c7e5;
+  border-color: #29535f;
+}
+
+.screen-3__tech__item--name-node {
+  color: #90bd56;
+  border-color: #3e4e40;
 }
