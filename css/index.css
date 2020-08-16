@@ -12,6 +12,7 @@
   background-color: transparent;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 .header__wrap {
@@ -49,6 +50,7 @@
   line-height: 40px;
   margin-left: 40px;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .header__nav__item--type-btn {
@@ -61,7 +63,9 @@
 
 .screen-1,
 .screen-2,
-.screen-3 {
+.screen-3,
+.screen-4,
+.screen-5 {
   width: 100%;
   height: 640px;
   text-align: center;
@@ -70,7 +74,9 @@
 
 .screen-1__wrap,
 .screen-2__wrap,
-.screen-3__wrap {
+.screen-3__wrap,
+.screen-4__wrap,
+.screen-5__wrap {
   width: 1200px;
   height: 640px;
   margin: 0 auto;
@@ -219,4 +225,122 @@
 .screen-3__tech__item--name-node {
   color: #90bd56;
   border-color: #3e4e40;
+}
+
+/* Screen Four */
+.screen-4 {
+  background-color: #f3f5f7;
+  color: #07111b;
+}
+
+.screen-4__heading {
+  margin-top: 85px;
+}
+
+.screen-4__heading__underline {
+  margin: 30px auto 20px;
+}
+
+.screen-4__env {
+  width: 100%;
+  padding: 0 60px;
+  position: absolute;
+  bottom: 230px;
+}
+
+.screen-4__env__item {
+  width: 165px;
+  height: 80px;
+  position: relative;
+  float: left;
+}
+
+.screen-4__env__item:not(:last-child) {
+  margin-right: 140px;
+}
+
+.screen-4__env__item__description {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  bottom: -40px;
+}
+
+.screen-4__env__item--i-1 {
+  background: url(../img/sc4-1.png) center top no-repeat;
+}
+
+.screen-4__env__item--i-2 {
+  background: url(../img/sc4-2.png) center top no-repeat;
+}
+
+.screen-4__env__item--i-3 {
+  background: url(../img/sc4-3.png) center top no-repeat;
+}
+
+.screen-4__env__item--i-4 {
+  background: url(../img/sc4-4.png) center top no-repeat;
+}
+
+/* Screen Five */
+.screen-5 {
+  background: url(../img/sc5.jpg) center top/cover no-repeat;
+  color: #fff;
+}
+
+.screen-5__person {
+  width: 205px;
+  height: 205px;
+  background: url(../img/sc5-1.png) center center no-repeat;
+  margin: 100px auto 50px;
+}
+
+.screen-5__heading__underline {
+  background-color: #fff;
+  margin: 20px auto 25px;
+}
+
+/* Screen More */
+.screen-more {
+  height: 200px;
+  overflow: hidden;
+}
+
+.screen-more__button {
+  width: 240px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  margin: 70px auto;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  height: 105px;
+  background: #000;
+  text-align: center;
+}
+
+.footer__links {
+  display: inline-block;
+  font-size: 0;
+  margin: 30px auto 10px;
+}
+
+.footer__link {
+  font-size: 14px;
+  font-weight: lighter;
+  color: #c8cdd2;
+}
+
+.footer__link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.5);
 }
