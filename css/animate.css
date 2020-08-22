@@ -1,3 +1,4 @@
+/* Screen One */
 .screen-1__heading {
   transition: all 1s;
 }
@@ -18,6 +19,7 @@
   transform: translate(0, 0);
 }
 
+/* Screen Two */
 .screen-2__heading {
   transition: all 1s;
 }
@@ -44,7 +46,7 @@
 }
 
 .screen-2__rocket--animate-done {
-  animation: bounce linear 0.5s 1s forwards;
+  animation: bounce ease-in 0.5s 1.5s forwards;
 }
 
 .screen-2__heading--animate-done,
@@ -58,6 +60,137 @@
   opacity: 1;
 }
 
+/* Screen Three */
+.screen-3__heading,
+.screen-3__react {
+  transition: all 1s;
+}
+
+.screen-3__heading__underline,
+.screen-3__subheading {
+  transition: all 1s .5s;
+}
+
+.screen-3__tech {
+  transform: translate(0, 150px);
+}
+
+.screen-3__heading--animate-init,
+.screen-3__subheading--animate-init {
+  opacity: 0;
+  transform: translate(0, 100%);
+}
+
+.screen-3__heading__underline--animate-init {
+  opacity: 0;
+}
+
+.screen-3__react--animate-init {
+  opacity: 0;
+  transform: scale(0.1);
+}
+
+.screen-3__heading--animate-done,
+.screen-3__subheading--animate-done {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.screen-3__heading__underline--animate-done {
+  opacity: 1;
+}
+
+.screen-3__react--animate-done {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.screen-3__tech--animate-done {
+  animation: bounce ease-in 0.5s 1.5s forwards;
+}
+
+/* Screen Four */
+.screen-4__heading,
+.screen-4__env__item {
+  transition: all 1s;
+}
+
+.screen-4__heading__underline,
+.screen-4__subheading {
+  transition: all 1s 0.5s;
+}
+
+.screen-4__heading--animate-init,
+.screen-4__subheading--animate-init {
+  opacity: 0;
+  transform: translate(0, 100%);
+}
+
+.screen-4__heading__underline--animate-init {
+  opacity: 0;
+}
+
+.screen-4__env--animate-init .screen-4__env__item{
+  opacity: 0;
+  transform: scale(0.1);
+}
+
+.screen-4__heading--animate-done,
+.screen-4__subheading--animate-done {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.screen-4__heading__underline--animate-done {
+  opacity: 1;
+}
+
+.screen-4__env--animate-done .screen-4__env__item{
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Screen Five */
+.screen-5__heading,
+.screen-5__person {
+  transition: all 1s;
+}
+
+.screen-5__heading__underline,
+.screen-5__subheading {
+  transition: all 1s 0.5s;
+}
+
+.screen-5__heading--animate-init,
+.screen-5__subheading--animate-init {
+  opacity: 0;
+  transform: translate(0, 100%);
+}
+
+.screen-5__heading__underline--animate-init {
+  opacity: 0;
+}
+
+.screen-5__person--animate-init {
+  opacity: 0;
+  transform: scale(0.1);
+}
+
+.screen-5__heading--animate-done,
+.screen-5__subheading--animate-done {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.screen-5__heading__underline--animate-done {
+  opacity: 1;
+}
+
+.screen-5__person--animate-done {
+  opacity: 1;
+  transform: scale(1);
+}
+
 @keyframes bounce {
   0% {
     transform: translate(0, 307px);
@@ -66,7 +199,7 @@
     transform: translate(0, 0);
   }
   80% {
-    transform: translate(0, 50px);
+    transform: translate(0, 20px);
   }
   100% {
     transform: translate(0, 0);

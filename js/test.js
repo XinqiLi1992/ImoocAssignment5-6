@@ -9,6 +9,25 @@ var screenAnimateElements = {
     ".screen-2__subheading",
     ".screen-2__person",
     ".screen-2__rocket"
+  ],
+  ".screen-3": [
+    ".screen-3__heading",
+    ".screen-3__heading__underline",
+    ".screen-3__subheading",
+    ".screen-3__react",
+    ".screen-3__tech"
+  ],
+  ".screen-4": [
+    ".screen-4__heading",
+    ".screen-4__heading__underline",
+    ".screen-4__subheading",
+    ".screen-4__env"
+  ],
+  ".screen-5": [
+    ".screen-5__heading",
+    ".screen-5__heading__underline",
+    ".screen-5__subheading",
+    ".screen-5__person"
   ]
 }
 
