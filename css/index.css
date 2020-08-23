@@ -12,7 +12,12 @@
   background-color: transparent;
   position: fixed;
   top: 0;
-  z-index: 1;
+  transition: all 1s;
+  z-index: 3;
+}
+
+.header--bg-white {
+  background: rgba(255, 255, 255, 0.9)
 }
 
 .header__wrap {
@@ -20,6 +25,10 @@
   height: 60px;
   color: #fff;
   position: relative;
+}
+
+.header--bg-white .header__wrap {
+  color: #000;
 }
 
 .header__logo {
@@ -42,23 +51,42 @@
   position: absolute;
 }
 
+.header--bg-white .header__nav__item {
+  color: #000;
+}
+
 .header__nav__item {
   display: inline-block;
   height: 40px;
   color: #fff;
   font-size: 1rem;
   line-height: 40px;
-  margin-left: 40px;
+  padding-left: 40px;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.header__nav__item--type-btn {
+.header__nav__item.header__nav__item--status-active {
+  font-weight: bold;
+}
+
+.header__nav__item.header__nav__item--type-btn {
   width: 98px;
   height: 40px;
   text-align: center;
   border-radius: 5px;
   background-color: #f01400;
+  color: #fff;
+  padding: 0;
+  margin-left: 40px;
+}
+
+.header__nav__underline {
+  position: absolute;
+  width: 64px;
+  margin-left: 40px;
+  left: 0px;
+  transition: all .5s;
 }
 
 .screen-1,
@@ -92,10 +120,12 @@
 }
 
 .screen-1__heading {
+  opacity: 0;
   margin-top: 240px;
 }
 
 .screen-1__subheading {
+  opacity: 0;
   margin-top: 20px;
 }
 
@@ -105,10 +135,16 @@
 }
 
 .screen-2__heading {
+  opacity: 0;
   margin-top: 80px;
 }
 
+.screen-2__subheading {
+  opacity: 0;
+}
+
 .screen-2__heading__underline {
+  opacity: 0;
   margin: 24px auto 18px;
 }
 
@@ -123,6 +159,7 @@
 }
 
 .screen-2__person {
+  opacity: 0;
   width: 275px;
   height: 380px;
   background: url(../img/sc2-1.png) center bottom no-repeat;
@@ -162,14 +199,17 @@
 }
 
 .screen-3__heading {
+  opacity: 0;
   font-size: 40px;
 }
 
 .screen-3__heading__underline {
+  opacity: 0;
   margin: 25px 0 20px;
 }
 
 .screen-3__react {
+  opacity: 0;
   width: 570px;
   height: 640px;
   background: url(../img/sc3.png) center no-repeat;
@@ -234,10 +274,12 @@
 }
 
 .screen-4__heading {
+  opacity: 0;
   margin-top: 85px;
 }
 
 .screen-4__heading__underline {
+  opacity: 0;
   margin: 30px auto 20px;
 }
 
@@ -249,6 +291,7 @@
 }
 
 .screen-4__env__item {
+  opacity: 0;
   width: 165px;
   height: 80px;
   position: relative;
@@ -289,6 +332,7 @@
 }
 
 .screen-5__person {
+  opacity: 0;
   width: 205px;
   height: 205px;
   background: url(../img/sc5-1.png) center center no-repeat;
@@ -296,6 +340,7 @@
 }
 
 .screen-5__heading__underline {
+  opacity: 0;
   background-color: #fff;
   margin: 20px auto 25px;
 }
@@ -307,6 +352,7 @@
 }
 
 .screen-more__button {
+  display: block;
   width: 240px;
   height: 60px;
   font-size: 18px;
@@ -316,6 +362,11 @@
   border-radius: 5px;
   margin: 70px auto;
   cursor: pointer;
+  color: #000;
+}
+
+.screen-more__button:hover {
+  color: #f01400;
 }
 
 /* Footer */

@@ -109,6 +109,10 @@
   animation: bounce ease-in 0.5s 1.5s forwards;
 }
 
+.screen-3__tech--animate-done .screen-3__tech__item {
+  animation: breathe .8s ease-in-out 2.5s infinite alternate-reverse both;
+}
+
 /* Screen Four */
 .screen-4__heading,
 .screen-4__env__item {
@@ -203,5 +207,14 @@
   }
   100% {
     transform: translate(0, 0);
+  }
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1.1)
+  }
+  100% {
+    transform: scale(1)
   }
 }

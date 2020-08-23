@@ -16,3 +16,7 @@ h2 {
 h3 {
   font-weight: normal;
 }
+
+html {
+  height: 100vh;
+}
